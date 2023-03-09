@@ -67,7 +67,7 @@ nav ul li{
 /*---------Styling for the first section of the page------------*/
 #main-banner{
     padding-top: 5rem;
-    height: 25rem;
+    height: 20rem;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -75,17 +75,39 @@ nav ul li{
     background-image: url("../../Resources/Images/Tree.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 50%;
+    background-position: 60%;
+    background-color:lightpink;
+    border-bottom: 0.25rem solid black;
 }
 
 .banner-heading{
     flex: 1.5;
+    display: flex;
+    justify-content: start;
+    align-items: left;
+    flex-direction: column;
+    height: 100%;
+}
+
+.banner-heading h2, .banner-heading h3, .banner-heading p{
+    margin: 0 0 0 3rem;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.banner-heading h2{
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+.banner-heading p{
+    margin-top: 4rem;
+    width: 50%
 }
 
 .banner-image{
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     height: 100%;
 }
