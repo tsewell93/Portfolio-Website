@@ -131,7 +131,7 @@ nav ul li{
 #projects{
     flex: 2; 
     order: 1;
-    border: 1px solid black;
+    border-right: 0.25rem solid black;
 }
 
 .projects-top{
@@ -193,7 +193,6 @@ nav ul li{
 #skills{
     flex: 1;
     order: 2;
-    border: 1px solid black;
     height: 100%;
     flex-wrap: wrap;
 }
@@ -224,4 +223,65 @@ nav ul li{
     height: 35%;
     width: auto;
     
+}
+
+/*---------Styling for the third section of the page (contact) ------------*/
+#contact-form{
+    /*Turning off this section as possibly moving to a new page*/
+    display: none;
+}
+
+/*---------Styling for the footer------------*/
+footer{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+}
+
+.footer-left{
+    margin-left: 1rem;
+    display: flex;
+    height: 100%;
+    width: auto;
+}
+
+.footer-left img{
+    height: 100%;
+    width: auto;
+    margin-left: 1rem;
+}
+
+.footer-middle{
+    position: absolute;
+    left: 46.5%;
+}
+
+button {
+    background-color: rgb(208, 13, 13);
+    border: 0.25rem solid black;;
+    border-radius: 0.4rem;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: rgb(124, 33, 33);
+}
+
+.footer-right{
+    margin-right: 1rem;
 }
