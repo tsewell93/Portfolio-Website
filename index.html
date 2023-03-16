@@ -11,20 +11,26 @@
     <title>Tom Sewell Portfolio Website</title>
 
 </head>
-<body>
+<body id="body">
     <!--Header section of the website to include the navigation section and website name-->
     <header class="website-header">
         <!--My Name for the top banner-->
-        <h2 id="my-name">Tom Sewell</h2>
-        <!--The website navigation element-->
-        <nav>
-            <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-            </ul>
+        <h1 id="my-name">Tom Sewell</h1>
+        <div id="linkIcons">
             <img class='navIcon' id="LinkedIn" src="Resources/Icons/LinkedIn.png" alt="LinkedIn Icon">
             <img class='navIcon' id="GitHub" src="Resources/Icons/GitHub.png" alt="GitHub Icon">
-        </nav>
+        </div>
+        <!--The website navigation element-->
+        <img id='menuIcon' src="Resources/Icons/menuIcon.png" alt="menu icon">
+        <div id="navMenu"> <!--This div should be hidden until an icon in the header is clicked-->
+            <nav>
+                <ul>
+                    <li>Projects</li>
+                    <li>About Me</li>
+                    <li>Get in Touch!</li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!--First section of the portfolio site - the main banner-->
@@ -107,11 +113,15 @@
             <img src="Resources/Icons/Bristol.png" alt="Bristol Icon">
         </div>
         <div class="footer-middle">
-            <button>Bristolify Me!</button>
+            <button id="button">Bristolify Me!</button>
         </div>
         <div class="footer-right">
             <h4>Copyright 2023</h4>
         </div>
     </footer>
+
+    <!--Add the script file-->
+    <script src="Resources/Javascript/script.js"></script>
+
 </body>
 </html>
