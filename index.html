@@ -11,61 +11,56 @@
     <title>Tom Sewell Portfolio Website</title>
 
 </head>
-<body>
+<body id="body">
     <!--Header section of the website to include the navigation section and website name-->
     <header class="website-header">
         <!--My Name for the top banner-->
-        <h2 id="my-name">Tom Sewell</h2>
-        <!--The website navigation element-->
-        <nav>
-            <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-            </ul>
+        <h1 id="my-name">Tom Sewell</h1>
+        <div id="linkIcons">
             <img class='navIcon' id="LinkedIn" src="Resources/Icons/LinkedIn.png" alt="LinkedIn Icon">
             <img class='navIcon' id="GitHub" src="Resources/Icons/GitHub.png" alt="GitHub Icon">
-        </nav>
+        </div>
+        <!--The website navigation element-->
+        <img id='menuIcon' src="Resources/Icons/menuIcon.png" alt="menu icon">
+        <div id="navMenu"> <!--This div should be hidden until an icon in the header is clicked-->
+            <nav>
+                <ul>
+                    <li>Projects</li>
+                    <li>About Me</li>
+                    <li>Get in Touch!</li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!--First section of the portfolio site - the main banner-->
     <section class="container" id="main-banner">
         <!--Define a container for the main banner text element-->
         <div class="container banner-heading">
-            <h2>Tom Sewell</h2>
             <h3>Chartered Engineer & Full-Stack Developer</h3>
-            <p>"I am a chartered electrical and electronic engineer, with over 6 years of professional engineering experience in the transport sector. I have recently taken an interest in full-stack software development and have been building my repertoire of coding skills in my spare time!"</p>
-        </div>
         <!--Define a container for the main banner image element-->
         <div class="container banner-image">
             <img src="Resources/Images/Tom Sewell.jpeg" alt="Tom Sewell Profile Picture">
         </div>
+        <div class="container" id="htmlIcon">
+            <img src="Resources/Icons/HTML5.png" alt="HTML-5 Icon">
+        </div>
+        <div class="container" id="cssIcon">
+            <img src="Resources/Icons/CSS3.png" alt="CSS-3 Icon">
+        </div>
+        <div class="container" id="jsIcon">
+            <img src="Resources/Icons/Javascript.png" alt="Javascript Icon">
+        </div>
+        <div class="container" id="gitIcon">
+            <img src="Resources/Icons/Git.png" alt="Git Icon">
+        </div>
+        <div class="container" id="reactIcon">
+            <img src="Resources/Icons/React.png" alt="React Icon">
+        </div>
     </section>
 
     <!--Second section to contain information on my skills and selected projects-->
-    <section class="container" id="skills-projects">
-        <!--Skills Sub-Section-->
-        <div id="skills" class="container">
-            <div class="container skills-top">
-                <h2>Tom's Coding Skills</h2>
-            </div>
-            <div class="container skills-bottom">
-                <div class="container" id="icon">
-                    <img src="Resources/Icons/HTML5.png" alt="HTML-5 Icon">
-                </div>
-                <div class="container" id="icon">
-                    <img src="Resources/Icons/CSS3.png" alt="CSS-3 Icon">
-                </div>
-                <div class="container" id="icon">
-                    <img src="Resources/Icons/Javascript.png" alt="Javascript Icon">
-                </div>
-                <div class="container" id="icon">
-                    <img src="Resources/Icons/Git.png" alt="Git Icon">
-                </div>
-                <div class="container" id="icon">
-                    <img src="Resources/Icons/Autocad-Logo.png" alt="AutoCad Icon">
-                </div>
-            </div>
-        </div>
+    <section class="container" id="projects">
         <!--Projects Sub-Section-->
         <div id="projects">
             <div class="container projects-top">
@@ -74,11 +69,15 @@
             <div class="container projects-bottom">
                 <!--First project to display-->
                 <div class="container portfolio-1">
-                <h3>Random Animal Generator</h3>
+                    <h3></h3>
                 </div>
                 <!--Second project to display-->
                 <div class="container portfolio-2">
-                <h3>project 2</h3>
+                    <h3>Jammming</h3>
+                </div>
+                <!--Second project to display-->
+                <div class="container portfolio-3">
+                    <h3>Coming Soon</h3>
                 </div>
             </div>
         </div>
@@ -106,12 +105,13 @@
             <h4>Developed in: </h4>
             <img src="Resources/Icons/Bristol.png" alt="Bristol Icon">
         </div>
-        <div class="footer-middle">
-            <button>Bristolify Me!</button>
-        </div>
         <div class="footer-right">
             <h4>Copyright 2023</h4>
         </div>
     </footer>
+
+    <!--Add the script file-->
+    <script src="Resources/Javascript/script.js"></script>
+
 </body>
 </html>
